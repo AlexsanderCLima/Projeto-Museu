@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-
     <title>Projeto Museu - HTML/CSS</title>
 </head>
 <body>
@@ -15,7 +14,6 @@
     <div id="container">
 
         <header>
-
             <div id="logo">
                 <h1><a href="">Museu Nacional</a></h1>
             </div>
@@ -23,7 +21,7 @@
             <nav>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Exposições</a></li>
+                    <li><a href=""> Exposicoes</a></li>
                     <li><a href="">Pesquisa</a></li>
                     <li><a href="">Acervo</a></li>
                     <li><a href="">Vídeos</a></li>
@@ -31,11 +29,115 @@
                     <li><a href="">Contato</a></li>
                 </ul>
             </nav>
-
         </header>
 
+        <div id="principal">
+            <div id="conteudo">
+                <section id="capa">
+                    <img src="img/museu.png" alt="">
+                </section>
+                <section>
+                    <article id="video">
+                     <h3>Video: conheça o museu</h3>
+                     <iframe 
+                        width="300" height="170" 
+                        src="https://youtube.com/embed/RGUYb-hivrc" 
+                        frameborder="0" 
+                        allow="autoplay;  encripted-media" 
+                        allowfullscreen>
+                     </iframe>
+                    </article>
 
+                    <article>
+                        <h3>Mapa: Encontra o museu</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8741003062883!2d2.337644001224909!3d48.86061111854634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sMuseu%20do%20Louvre!5e0!3m2!1spt-BR!2sbr!4v1681479709857!5m2!1spt-BR!2sbr" 
+                        width="300" height="170" style="border:0;" 
+                        allowfullscreen="">                
+                        </iframe>                           
+                    </article>
+
+                    <article id="exposicoes">
+                    <h3>Exposições</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Os Assustadores Insetos</a>
+                        </li>
+                        <li>
+                            <a href="#">O Crânio de Luiza, a mulher mais antiga do mundo></a>
+                        </li>
+                        <li>
+                            <a href="#">Plantas do Brasil Central></a>
+                        </li>
+                        <li>
+                            <a href="#">Tereza Cristina: A Imperatriz Arqueóloga</a>
+                        </li>
+                        <li>
+                            <a href="#">Arte com Dinossauros - Paleoarte</a>
+                        </li>
+                        <li>
+                            <a href="#"><strong>Veja Todos (65)</strong></a>
+                        </li>
+                    </ul>
+
+                    <article>
+                        <h3> 200 Anos de história</h3>
+                        <p>
+                         Lorem ipsum dolor sit amet consectetur 
+                         adipisicing elit. Consequuntur ea of
+                         ficiis perferendis quidem rerum corp
+                         s aliquam nihil similique facilis ame
+                         t illo debitis ducimus tempore officia, ipsum eos odit?
+                        </p>
+
+                        <a href=""><strong>Leia Mais</strong></a>
+
+                    </article>
+
+                </section>
+            </div>
+            <aside>
+                <section id="depoimento">
+                    <img src="img/depoimento.png" alt="">
+                </section>
+
+                <section>
+                    <h4>Faça uma visita</h4>
+                    <form>
+                        <fieldset>
+                            <legend>Selecione uma data</legend>
+                            <label for="date">Data</label>
+                            <input class="campo" type="text" id="data" value="dd/mm/aaaa">
+
+
+                            <label for="qtd">Qtde Pessoas</label>
+                            <input class="campo" style="width:30px" type="text" id="qtd" value="1">
+                        </fieldset>
+                        <input class="botao" type="submit" value="Verificar Disponibilidade">
+                    </form>
+                </section>
+
+                <section id="galeria">
+                    <h4>Galeria de Fotos</h4>
+                    <a href="">
+                        <img src="img/imagem1.jpg" height="93" width="93" alt="Descricao Imagem">
+                    </a>
+                    <a href="">
+                        <img src="img/imagem2.jpg" height="93" width="93">
+                    </a>
+                    <a href="">
+                        <img src="img/imagem3.jpg" height="93" width="93">
+                    </a>
+                    <a href="">
+                        <img src="img/imagem4.jpg" height="93" width="93">
+                    </a>
+                </section>
+
+
+
+            </aside>
+        </div>        
     </div>
+
     
 </body>
 </html>
